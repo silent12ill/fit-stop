@@ -1,10 +1,9 @@
 var Workout = (props) => (
   <div className="workout">
+    <span className ='warmupTitle activeTitle'>Warmup</span>
+    <span className ='workoutTitle'>Workout</span>
+    <span className ='cooldownTitle'>Cooldown</span>
   <Timer timer= {props.timer} />
-    <h1 className='workoutTitle'>Warmup </h1>
-
-
-
 
   <Exercise exercise= {props.exercise} />
   <button onClick={props.goToSummary} className="blackButton">Summary</button>
